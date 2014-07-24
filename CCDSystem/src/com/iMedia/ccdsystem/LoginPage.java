@@ -3,6 +3,7 @@ package com.iMedia.ccdsystem;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -32,6 +33,7 @@ public class LoginPage extends Activity {
 				}
 				else{
 					Toast.makeText(getApplicationContext(), "wrong info", 1000).show();
+					Log.i("else", "condition occur");
 				}
 			}
 		});
