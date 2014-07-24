@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="162dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/af" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="17dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="256dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="CCD HEALTH SYSTEM"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="376dp"
+            android:ems="10" 
+            android:hint="User Id">
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="376dp"
+            android:ems="10"
+            android:hint="Password" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rememberme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="376dp"
+        android:text="Remember Me" />
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:id="@+id/forgetpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rememberme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+     <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="376dp"
+       android:text="Forget Password ?" />
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:id="@+id/loginb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgetpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+     <Button
+       android:id="@+id/button1"
+       android:layout_width="220dp"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="376dp"
+       android:text=" Login "
+       android:background="@android:color/holo_blue_bright" />
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>
